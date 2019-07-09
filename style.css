@@ -104,18 +104,6 @@ body
   font-family: Futura,Trebuchet MS,Arial,sans-serif;
 }
 
-.address>p {
-	margin: 0pt;
-}
-
-.contact {
-	margin-top: 12pt;
-}
-
-.contact>p {
-	margin: 0pt;
-}
-
 .cv {
 	display: table;
 	width: 100%;
@@ -158,4 +146,32 @@ body
 
 .publication>.comment {
 	font-size: smaller;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 20%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
