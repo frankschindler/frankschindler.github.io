@@ -1,7 +1,7 @@
 /* TOP NAVIGATION BAR */
-
 /* Add a black background color to the top navigation */
 .topnav {
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
   max-width: 1000px;
   margin: auto;
   margin-top: 90pt;
@@ -10,8 +10,8 @@
 }
 
 /* Style the links inside the navigation bar */
-.topnav b {
-  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+.topnav ontheright {
+  font-weight: bold;
   float: right;
   color: white;
   text-align: center;
@@ -22,7 +22,7 @@
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  font-weight: bold;
   float: left;
   color: white;
   text-align: center;
