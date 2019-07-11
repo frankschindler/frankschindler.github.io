@@ -53,14 +53,6 @@
   text-decoration: none;
 }
 
-.topnav a:hover {
-  color: #ffffff;
-}
-
-.topnav a:active {
-  color: #ffffff;
-}
-
 /* MAIN STYLE */
 a:link {
   color: #800000;
@@ -128,24 +120,16 @@ body
 	height: 20pt;
 }
 
-.cvitem>div:first-child {
-	width: 110pt;
-}
-
 .publication {
 	margin: 10pt 0pt;
 }
 
 .publication>p {
-	margin: 1pt 0pt;
+	margin: 0pt 0pt;
 }
 
 .publication>.title {
 	font-style: italic;
-}
-
-.publication>.comment {
-	font-size: smaller;
 }
 
 .google-maps {
