@@ -4,7 +4,7 @@
   font-family: Futura,Trebuchet MS,Arial,sans-serif;
   max-width: 1000px;
   margin: auto;
-  margin-top: 90pt;
+  margin-top: 50pt;
   background-color: #e68a00;
   overflow: hidden;
 }
@@ -15,9 +15,9 @@
   float: right;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 18px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 /* Style the links inside the navigation bar */
@@ -26,9 +26,9 @@
   float: left;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 18px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 /* Change the color of links on hover */
@@ -82,7 +82,7 @@ body
 	max-width: 1000px;
 	margin: auto;
 	margin-top: 10pt;
-	margin-bottom: 90pt;
+	margin-bottom: 50pt;
 }
 
 .section {
