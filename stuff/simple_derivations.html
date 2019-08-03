@@ -38,11 +38,13 @@
     and so on, where \(\mathbf{\Delta x} = \mathbf{x_2} - \mathbf{x_1}\) and \(\Delta t = t_2 - t_1\). We recognize the Lagrangian operator \(L = \left(\mathbf{p} \cdot \mathbf{\dot{x}} - H \right) \), and can replace \(\langle x_2 | \exp[\mathrm{i} L \Delta t] | x_1\rangle \) by its classical (expectation) value since \(x_2\) and \(x_1\) are close-by. Plugging this back in the decomposition above, we recover the Feynman prescription of weighting every path by the exponentiated action \( \exp[\mathrm{i} \int L dt] \).
   </p>
   <p>
-    <b>4. Kepler's laws</b>
+    <b>4. Kepler's third law</b>
     <br>
     Consider Newton's law for the gravitational force
     $$\mathbf{\ddot{r}} = - \frac{G M}{r^2} \mathbf{\hat{r}}.$$
-    <i>todo.</i>
+    We now do a little dimensional analysis. Rescale all lengths by a factor A and all times by a factor T. The force law now becomes
+    $$\frac{A}{T^2} \mathbf{\ddot{r}} = - \frac{G M}{A^2 r^2} \mathbf{\hat{r}}.$$
+    Comparing with the previous equation we deduce that \(A^3/T^2\) needs to be a constant (actually, equal to one in the right units) for the force law to be the same in the rescaled coordinates.
   </p>
   <p>
     <b>5. Hawking radiation</b>
