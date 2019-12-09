@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+<meta charset="utf-8">
+<title>Frank Schindler: Stuff</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="section">
+  <a href="../stuff.html">Go back</a>
+  <div class="body">
+    Here you can find some hacks that are meant as memory aids and for amusement, never for a replacement of the correct derivation. They require some familiarity with theoretical physics. Let me know if you have comments or further suggestions.
+  <p>
+    <b>1. The barometric height formula</b>
+    <br>
+    We want to find how air density \(\rho\) is related to height from ground \(h\) in the atmosphere. At temperature \(T\) and in the thermodynamic limit, we expect \(\rho\) to be given by the Boltzmann distribution
+    $$ \rho(h) \propto \exp\left[- \frac{E(h)}{k_B T}\right], $$
+    where \(E(h)\) is the energy of particles at height \(h\) and \(k_B\) is Boltzmann's constant. When we plug in the standard potential energy formula \(E(h) = m g h\) that is valid close to earth's surface, with \(m\) the mass of air particles and \(g\) the gravitational acceleration, we retrieve the barometric height formula. <i>Note: this is somewhat suprising, since there is an <a href="https://en.wikipedia.org/wiki/Barometric_formula#Derivation">alternative derivation</a> that does not use statistical mechanics concepts at all.</i>
+  </p>
+  <p>
+    <b>2. Radiation pressure</b>
+    <br>
+    We want to find the pressure \(p\) exerted by electromagnetic radiation with energy density \(\epsilon\). Assuming photons don't interact (photon-photon scattering via a Feynman box diagram is suppressed by the fourth power \(\alpha^4\) of the fine-structure constant), we may use the energy-momentum tensor \(T_{\mu \nu} = \mathrm{diag}\{\epsilon,p,p,p\}\) for an ideal gas at rest. Remembering that the stress-energy tensor of light
+      $$ T_{\mu \nu} \propto \frac{\delta}{\delta g^{\mu \nu}} \int \mathrm{d}^4 x \sqrt{g} F_{\alpha \beta} F^{\alpha \beta} \propto \int \mathrm{d}^4 x \sqrt{g} \left[F_{\mu \alpha} F_{\nu}^{\hphantom{\nu}\alpha} - \frac{1}{4} g_{\mu \nu} F_{\alpha \beta} F^{\alpha \beta}\right] $$
+      is traceless in four dimensions (with \(g_{\mu \nu}\) the metric and \(F_{\alpha \beta}\) the antisymmetric Maxwell tensor), we obtain \(-\epsilon + 3 p = 0\), and thereby \(p = \epsilon/3\).
+  </p>
+  <p>
+    <b>3. Feynman's path integral prescription</b>
+    <br>
+    We want to find the amplitude \(\langle x_f | x_i\rangle\) for a quantum particle to go from spacetime coordinate \(x_i\) to spacetime coordinate \(x_f\). By the composition properties of amplitudes we can decompose this into
+    $$ \langle x_f | x_i\rangle = \sum_{x_n \dots x_1} \langle x_f | x_n \rangle \langle x_n | x_{n-1} \rangle \dots \langle x_2 | x_1 \rangle \langle x_1 | x_i\rangle,$$
+    where we assume the \(x_n \dots x_1\) to be closely spaced. The problem thus reduces to finding the amplitude to go between spacetime positions that are close together. In quantum mechanics, the Hamiltonian operator \(H\) translates in time direction and the momentum operator \(\mathbf{p}\) translates in spatial directions. We therefore obtain
+    $$|x_2\rangle = \exp\left[\mathrm{i} \left(\mathbf{p} \cdot \mathbf{\Delta x} - H \Delta t \right)\right] |x_1\rangle,$$
+    and so on, where \(\mathbf{\Delta x} = \mathbf{x_2} - \mathbf{x_1}\) and \(\Delta t = t_2 - t_1\). We recognize the Lagrangian operator \(L = \left(\mathbf{p} \cdot \mathbf{\dot{x}} - H \right) \), and can replace \(\langle x_2 | \exp[\mathrm{i} L \Delta t] | x_1\rangle \) by its classical (expectation) value since \(x_2\) and \(x_1\) are close-by. Plugging this back in the decomposition above, we recover the Feynman prescription of weighting every path by the exponentiated action \( \exp[\mathrm{i} \int L dt] \).
+  </p>
+  <p>
+    <b>4. Kepler's third law</b>
+    <br>
+    Consider Newton's law for the gravitational force
+    $$\mathbf{\ddot{r}} = - \frac{G M}{r^2} \mathbf{\hat{r}}.$$
+    We now do a little dimensional analysis. Rescale all lengths by a factor A and all times by a factor T. The force law now becomes
+    $$\frac{A}{T^2} \mathbf{\ddot{r}} = - \frac{G M}{A^2 r^2} \mathbf{\hat{r}}.$$
+    Comparing with the previous equation we deduce that \(A^3/T^2\) needs to be a constant (actually, equal to one in the right units) for the force law to be the same in the rescaled coordinates.
+  </p>
+  <p>
+    <b>5. Hawking radiation</b>
+    <br>
+    <i>todo.</i>
+  </p>
+  <p>
+    <b>6. The Metropolis rule</b>
+    <br>
+    <i>todo.</i>
+  </p>
+</div>
+</div>
+
+</div>
+</body>
+</html>

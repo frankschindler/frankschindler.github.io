@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Frank Schindler: Stuff</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="section">
+  <a href="../stuff.html">Go back</a>
+  <div class="body">
+  <p><b>Machine learning in condensed matter physics</b></p>
+  <p>
+    Machine learning methods have recently received considerable attention in the strong correlations community and elsewhere. The field is still in its infancy, and so the present state of it (with most of the papers more exploratory than anything and at times bordering the trivial) is not a good indicator of whether we should expect any breakthrough results to occur in the near future. Here I want to argue that there is a good chance for it, as long as we look at the right problems.
+  </p>
+  <p>
+    So far (as of 2019), the great majority of machine learning applications to condensed matter can be assigned to one of two groups:
+  </p>
+  <p>
+    (1) The supervised or unsupervised determination of phase diagrams from at least partially unlabelled data. Here, a learning algorithm such as a feed-forward neural network is trained to distinguish between points in the dataset (e.g. spin configurations in a magnet) that we know to belong to different phases (such as ferromagnetic and paramagnetic), before it is applied to all other points in the dataset to obtain the whole phase diagram. For an unsupervised method, we do this many times, with different "known" datapoints, and see which decomposition works best.
+  </p>
+  <p>
+    (2) The use of restricted Boltzmann machines as variational wavefunctions. Here, a Boltzmann machine is used as an ansatz wavefunction for the ground state of a many-body Hamiltonian, and its parameters are fitted in order to minimize its energy expectation value. In this sense Boltzmann machine wavefunctions (sometimes called neural quantum states) are very similar to tensor network states, the difference being that the former involve nonlinear operations (at least in some cases however, they can be identified with particular long-range tensor networks).
+  </p>
+  <p>
+    I want to argue here that neither of these two current main avenues of investigation is in a position to leverage the full potential that machine learning methods have in (theoretical) physics.
+  </p>
+  <p>
+    The problem with (1) is obvious: it is unclear why any so obtained phase diagram should be trusted. There are no handles or error bars that allow us to objectively identify one phase diagram as "more correct" than another. Sure, clustering datapoints can give us some idea of what the phases are. But in physics we are used to making predictions with an accuracy that is unparalleled by other disciplines. If we do not want to give up on this, using an uncontrolled method to achieve something that can be done in a controlled (but of course, more difficult) fashion is not an option.
+  </p>
+  <p>
+    The problem with (2) is less severe: it is true that neural quantum states, as a dimensionality-reducing variational ansatz, can be compared with other kinds of variational states in a controlled fashion (by comparing the obtained energy expectation values), they can therefore be trusted. However, the only tractable kinds of Boltzmann machines (the so-called restricted ones) are inherently shallow, and thus fall short of the paradigm-shifting dimensionality-reduction capability of deep learning algorithms. It is therefore unclear if the marginal gains they provide in performance (which have been established at least for some models) outweigh the losses in interpretability, malleability and physicality with respect to the more conventional tensor network states.
+  </p>
+  <i>todo: finish this.</i>
+</div>
+</div>
+
+</div>
+</body>
+</html>
