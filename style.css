@@ -132,13 +132,14 @@ body
 	font-style: italic;
 }
 
-.google-maps {
+.maps {
     position: relative;
     padding-bottom: 50%; // This is the aspect ratio
     height: 0;
     overflow: hidden;
 }
-.google-maps iframe {
+
+.maps iframe {
     position: absolute;
     top: 0;
     left: 0;
