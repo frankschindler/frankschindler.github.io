@@ -1,1 +1,0 @@
-# frankschindler.github.io
