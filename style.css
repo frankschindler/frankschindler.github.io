@@ -110,11 +110,11 @@ body
 	vertical-align: top;
 }
 
-.cvitem {
+.lastitem {
 	display: table-row;
 }
 
-.cvitem>div {
+.lastitem>div {
 	display: table-cell;
 	vertical-align: top;
 	height: 20pt;
