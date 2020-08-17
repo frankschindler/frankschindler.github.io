@@ -4,13 +4,12 @@ html {
 }
 
 /* TOP NAVIGATION BAR */
-/* Add a black background color to the top navigation */
 .topnav {
   font-family: Futura,Trebuchet MS,Arial,sans-serif;
   max-width: 1000px;
   margin: auto;
   margin-top: 50pt;
-  background-color: #e68a00;
+  background-color: #457B9D;
   overflow: hidden;
 }
 
@@ -38,13 +37,13 @@ html {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #800000;
+  background-color: #1D3557;
   color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #800000;
+  background-color: #1D3557;
   color: white;
 }
 
@@ -60,22 +59,22 @@ html {
 
 /* MAIN STYLE */
 a:link {
-  color: #800000;
+  color: #457B9D;
 	text-decoration: none;
 }
 
 a:visited {
-  color: #800000;
+  color: #457B9D;
   text-decoration: none;
 }
 
 a:hover {
-  color: #800000;
+  color: #457B9D;
 	text-decoration: underline;
 }
 
 a:active {
-  color: #800000;
+  color: #457B9D;
 }
 
 body
@@ -97,7 +96,7 @@ body
 .section>h1 {
 	margin-bottom: 20pt;
 	font-size: xx-large;
-	color: #800000;
+	color: #1D3557;
   font-family: Futura,Trebuchet MS,Arial,sans-serif;
 }
 
@@ -155,7 +154,7 @@ body
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
-  width: 25%;
+  width: 33%;
   padding: 0px;
 }
 
