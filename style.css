@@ -128,7 +128,7 @@ body
 
 .maps {
     position: relative;
-    padding-bottom: 50%; // This is the aspect ratio
+    padding-bottom: 40%; // This is the aspect ratio
     height: 0;
     overflow: hidden;
 }
