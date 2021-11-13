@@ -158,14 +158,14 @@ body
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column3 {
   float: left;
-  width: 18%;
+  width: 30%;
   padding: 0px;
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column4 {
   float: left;
-  width: 82%;
+  width: 70%;
   padding: 0px;
 }
 
