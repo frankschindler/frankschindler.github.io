@@ -1,6 +1,13 @@
 body
 {
   font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-size: medium;
+  max-width: 768pt;
+  margin: auto;
+  margin-top: 90pt;
+  margin-bottom: 90pt;
+  padding-left: 12pt;
+  padding-right: 12pt;
   --caption-color: #e56b6f;
   --link-color: #355070;
 }
@@ -13,9 +20,7 @@ html {
 /* TOP NAVIGATION BAR */
 .topnav {
   font-family: Futura,Trebuchet MS,Arial,sans-serif;
-  max-width: 1000px;
-  margin: auto;
-  margin-top: 50pt;
+  margin-bottom: 20pt;
   background-color: var(--link-color);
   overflow: hidden;
 }
@@ -28,7 +33,7 @@ html {
   text-align: center;
   padding: 14px 18px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: large;
 }
 
 /* Style the links inside the navigation bar */
@@ -39,19 +44,17 @@ html {
   text-align: center;
   padding: 14px 18px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: large;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: var(--caption-color);
-  color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
   background-color: var(--caption-color);
-  color: white;
 }
 
 .topnav a:link {
@@ -82,13 +85,6 @@ a:hover {
 
 a:active {
   color: var(--caption-color);
-}
-
-.wrapper {
-	max-width: 1000px;
-	margin: auto;
-	margin-top: 10pt;
-	margin-bottom: 50pt;
 }
 
 .section {
