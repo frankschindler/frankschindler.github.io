@@ -1,5 +1,6 @@
-body
-{
+body {
+  --caption-color: #e56b6f;
+  --link-color: #355070;
   font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
   font-size: medium;
   max-width: 768pt;
@@ -8,43 +9,37 @@ body
   margin-bottom: 90pt;
   padding-left: 12pt;
   padding-right: 12pt;
-  --caption-color: #e56b6f;
-  --link-color: #355070;
 }
 
 html {
-  overflow-x: hidden;
   margin-right: calc(100% - 100vw);
 }
 
 /* TOP NAVIGATION BAR */
 .topnav {
   font-family: Futura,Trebuchet MS,Arial,sans-serif;
-  margin-bottom: 20pt;
   background-color: var(--link-color);
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
 .topnav ontheright {
   font-weight: bold;
+  font-size: large;
   float: right;
   color: white;
   text-align: center;
   padding: 14px 18px;
-  text-decoration: none;
-  font-size: large;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   font-weight: bold;
+  font-size: large;
   float: left;
   color: white;
   text-align: center;
   padding: 14px 18px;
   text-decoration: none;
-  font-size: large;
 }
 
 /* Change the color of links on hover */
@@ -87,15 +82,10 @@ a:active {
   color: var(--caption-color);
 }
 
-.section {
-	margin-bottom: 30pt;
-}
-
 .section>h1 {
-	margin-bottom: 20pt;
-	font-size: xx-large;
-	color: var(--link-color);
   font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  font-size: xx-large;
+	color: var(--link-color);
 }
 
 .cv {
