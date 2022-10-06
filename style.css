@@ -6,6 +6,14 @@ body {
     margin-bottom: 25pt;
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+        margin-left: 0pt;
+        margin-right: 0pt;
+    }
+}
+
 h1 {
     color: #355070;
 }
