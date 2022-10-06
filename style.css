@@ -1,0 +1,32 @@
+body {
+	font-family: "Open Sans", sans-serif;
+    max-width: 500pt;
+	margin: auto;
+	margin-top: 25pt;
+    margin-bottom: 25pt;
+    padding-left: 20pt;
+    padding-right: 20pt;
+}
+
+h1 {
+    color: #355070;
+}
+
+h2 {
+    color: #355070;
+}
+
+a:link {
+    color: #e56b6f;
+	text-decoration: none;
+}
+
+a:visited {
+    color: #e56b6f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e56b6f;
+	text-decoration: underline;
+}
