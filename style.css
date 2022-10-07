@@ -6,8 +6,10 @@ body {
     margin-bottom: 25pt;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     body {
+        margin-top: 10pt;
+        margin-bottom: 10pt;
         margin-left: 10pt;
         margin-right: 10pt;
     }
