@@ -4,8 +4,13 @@ body {
 	margin: auto;
 	margin-top: 25pt;
     margin-bottom: 25pt;
-    margin-left: 10pt;
-    margin-right: 10pt;
+}
+
+@media (max-width: 500px) {
+    body {
+        margin-left: 10pt;
+        margin-right: 10pt;
+    }
 }
 
 h1 {
