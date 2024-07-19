@@ -1,39 +1,39 @@
 body {
 	font-family: "Open Sans", sans-serif;
-    max-width: 480pt;
+	max-width: 480pt;
 	margin: auto;
 	margin-top: 25pt;
-    margin-bottom: 25pt;
+	margin-bottom: 25pt;
 }
 
 @media (max-width: 700px) {
-    body {
-        margin-top: 10pt;
-        margin-bottom: 10pt;
-        margin-left: 10pt;
-        margin-right: 10pt;
-    }
+	body {
+		margin-top: 10pt;
+		margin-bottom: 10pt;
+		margin-left: 10pt;
+		margin-right: 10pt;
+	}
 }
 
 h1 {
-    color: #355070;
+	color: #355070;
 }
 
 h2 {
-    color: #355070;
+	color: #355070;
 }
 
 a:link {
-    color: #e56b6f;
+	color: #e56b6f;
 	text-decoration: none;
 }
 
 a:visited {
-    color: #e56b6f;
-    text-decoration: none;
+	color: #e56b6f;
+	text-decoration: none;
 }
 
 a:hover {
-    color: #e56b6f;
+	color: #e56b6f;
 	text-decoration: underline;
 }
