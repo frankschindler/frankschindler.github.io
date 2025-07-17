@@ -37,3 +37,8 @@ a:hover {
 	color: #e56b6f;
 	text-decoration: underline;
 }
+
+.link-list {
+    display: flex;
+    gap: 1em; /* consistent spacing between all links */
+}
