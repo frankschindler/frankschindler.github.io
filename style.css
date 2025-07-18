@@ -1,12 +1,12 @@
 body {
 	font-family: "Open Sans", sans-serif;
-	max-width: 550px;
+	max-width: 530px;
 	margin: auto;
 	margin-top: 70px;
 	margin-bottom: 70px;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 530px) {
     body {
         margin: 10px;
     }
