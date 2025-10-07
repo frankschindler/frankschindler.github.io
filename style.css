@@ -37,5 +37,5 @@ a:hover {
 
 .link-list {
     display: flex;
-    gap: 1.5em; /* consistent spacing between all links */
+    gap: 1.36em; /* consistent spacing between all links */
 }
