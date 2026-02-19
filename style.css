@@ -4,25 +4,42 @@ body {
 	margin: auto;
 	margin-top: 70px;
 	margin-bottom: 70px;
+	font-size: 17px;
+	line-height: 1.6;
+	color: #333;
+	background: #fafbfc;
+	animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; transform: translateY(6px); }
+	to { opacity: 1; transform: translateY(0); }
 }
 
 @media (max-width: 530px) {
     body {
-        margin: 10px;
+        margin: 20px 16px;
+        font-size: 16px;
     }
 }
 
 h1 {
 	color: #355070;
+	font-weight: 600;
+	margin-bottom: 0.3em;
 }
 
 h2 {
 	color: #355070;
+	font-weight: 600;
+	margin-top: 1.2em;
+	margin-bottom: 0.6em;
 }
 
 a:link {
 	color: #e56b6f;
 	text-decoration: none;
+	transition: color 0.2s;
 }
 
 a:visited {
@@ -31,11 +48,104 @@ a:visited {
 }
 
 a:hover {
-	color: #e56b6f;
+	color: #c2494d;
 	text-decoration: underline;
 }
 
+/* Navigation pill links */
 .link-list {
     display: flex;
-    gap: 1.36em; /* consistent spacing between all links */
+    flex-wrap: wrap;
+    gap: 0.6em;
+}
+
+.link-list a {
+    display: inline-block;
+    padding: 0.35em 0.9em;
+    border: 1.5px solid #e56b6f;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 400;
+    transition: background 0.2s, color 0.2s;
+}
+
+.link-list a:hover {
+    background: #e56b6f;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Profile photo */
+.profile-photo {
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    width: 300px;
+    max-width: 100%;
+}
+
+/* Section spacing */
+.section {
+    margin-top: 1.2em;
+}
+
+/* Contact card */
+.contact-card {
+    background: #f5f6f8;
+    border-left: 4px solid #355070;
+    border-radius: 4px;
+    padding: 1em 1.2em;
+    line-height: 1.5;
+}
+
+/* Back nav link */
+.back-link {
+    font-size: 0.9em;
+    color: #888;
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+
+.back-link:link,
+.back-link:visited {
+    color: #888;
+}
+
+.back-link:hover {
+    color: #e56b6f;
+}
+
+/* Lecture cards */
+.lecture-card {
+    display: block;
+    background: #f5f6f8;
+    border-left: 4px solid #355070;
+    border-radius: 4px;
+    padding: 1em 1.2em;
+    margin-bottom: 0.8em;
+    text-decoration: none;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.lecture-card:hover {
+    border-left-color: #e56b6f;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+}
+
+.lecture-card .card-title {
+    color: #e56b6f;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.lecture-card:visited .card-title {
+    color: #e56b6f;
+}
+
+.lecture-tag {
+    display: inline-block;
+    font-size: 0.75em;
+    color: #888;
+    margin-top: 0.4em;
+    letter-spacing: 0.03em;
 }
