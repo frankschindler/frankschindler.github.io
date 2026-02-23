@@ -188,6 +188,12 @@ a:hover {
     color: #888;
 }
 
+@media (max-width: 530px) {
+    .talks-table .talk-date {
+        white-space: normal;
+    }
+}
+
 .talks-table .talk-event {
     font-weight: 600;
 }
