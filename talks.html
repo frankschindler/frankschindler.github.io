@@ -16,7 +16,7 @@
 		<a class="back-link" href="index.html">&larr; back to home</a>
 	</p>
 
-	<p>A list of my invited talks at conferences, colloquia, and seminars.</p>
+	<p>Here are some of my recent conference and seminar talks:</p>
 
 	<div id="talks-container"></div>
 </div>
@@ -35,8 +35,12 @@
 	var now = new Date();
 	var curYM = now.getFullYear() + "-" + String(now.getMonth() + 1).padStart(2, "0");
 
+	var cutoff = new Date(now);
+	cutoff.setMonth(cutoff.getMonth() - 24);
+	var cutoffYM = cutoff.getFullYear() + "-" + String(cutoff.getMonth() + 1).padStart(2, "0");
+
 	var upcoming = talks.filter(function (t) { return t.date >= curYM; });
-	var past = talks.filter(function (t) { return t.date < curYM; });
+	var past = talks.filter(function (t) { return t.date < curYM && t.date >= cutoffYM; });
 
 	upcoming.sort(function (a, b) { return a.date.localeCompare(b.date); });
 	past.sort(function (a, b) { return b.date.localeCompare(a.date); });
