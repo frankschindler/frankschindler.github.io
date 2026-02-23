@@ -1,0 +1,71 @@
+// ---------------------------------------------------------------
+// Talks data – edit this file to add, remove, or update entries.
+//
+//   date:     "YYYY-MM"  (e.g. "2026-05" for May 2026)
+//   event:    name of the event, seminar, or colloquium
+//   location: institution and/or city, country (or "Virtual")
+//
+// To add a talk, copy any { … } block and change the values.
+// The page sorts automatically – order here does not matter.
+// ---------------------------------------------------------------
+
+const talks = [
+  { date: "2026-11", event: "Materials Research Society Fall Meeting", location: "Boston, USA" },
+  { date: "2026-06", event: "Quantum Matter Frontiers: Entanglement, Symmetry, and Emergence", location: "KIAS, Seoul, South Korea" },
+  { date: "2026-06", event: "Young Research Leaders in Topological Materials and Beyond", location: "KIAS, Seoul, South Korea" },
+  { date: "2026-05", event: "Quantum Information and Quantum Matter", location: "NYU Abu Dhabi, UAE" },
+  { date: "2026-01", event: "New Frontiers of Geometry and Topology in Condensed Matter Physics", location: "University of Tokyo, Japan" },
+  { date: "2025-12", event: "Leeds\u2013Loughborough\u2013Nottingham Seminar", location: "University of Leeds, UK" },
+  { date: "2025-11", event: "Theory Group Seminar", location: "University of Warwick, UK" },
+  { date: "2025-11", event: "Theory Discussion and Condensed Matter Seminar", location: "University of St Andrews, UK" },
+  { date: "2025-10", event: "Theoretical Physics Seminar", location: "Lancaster University, UK" },
+  { date: "2025-08", event: "Summer School on Symmetry Protected Topological Phases", location: "Physikzentrum Bad Honnef, Germany" },
+  { date: "2025-07", event: "Young Research Leaders in Topological Materials and Beyond", location: "Rice Global Paris Center, France" },
+  { date: "2025-06", event: "Condensed Matter and Quantum Materials", location: "University of Bristol, UK" },
+  { date: "2025-04", event: "Spring School on Electron Correlations and Topology", location: "Rice University, Houston, USA" },
+  { date: "2024-11", event: "S\u00e9minaire Th\u00e9orie", location: "Institut N\u00e9el, Grenoble, France" },
+  { date: "2024-09", event: "Non-Hermitian Topology, Geometry, and Symmetry", location: "Simons Center for Geometry and Physics, Stony Brook, USA" },
+  { date: "2024-06", event: "CMT Forum", location: "University of Oxford, UK" },
+  { date: "2024-05", event: "Quantum Information and Quantum Matter", location: "NYU Abu Dhabi, UAE" },
+  { date: "2024-05", event: "Theory Group Seminar", location: "University of Manchester, UK" },
+  { date: "2024-04", event: "Recently Appointed Academic Talks", location: "Thomas Young Centre, London, UK" },
+  { date: "2024-03", event: "Theory Group Seminar", location: "University of Birmingham, UK" },
+  { date: "2024-02", event: "Condensed Matter Theory Seminar", location: "King's College London, UK" },
+  { date: "2024-02", event: "Nordic and UK Virtual Condensed Matter Seminar", location: "Virtual" },
+  { date: "2024-02", event: "Theory Group Seminar", location: "Imperial College London, UK" },
+  { date: "2024-01", event: "Condensed Matter Theory Seminar", location: "Queen Mary University of London, UK" },
+  { date: "2024-01", event: "Quantum Many-Body Theory Seminar", location: "Max Planck Institute for Solid State Research, Stuttgart, Germany" },
+  { date: "2023-11", event: "Theory of Condensed Matter Seminar", location: "University of Cambridge, UK" },
+  { date: "2023-09", event: "Korrelationstage (keynote)", location: "MPI-PKS, Dresden, Germany" },
+  { date: "2023-08", event: "Summer School: Physics by the Lake", location: "University of Stirling, UK" },
+  { date: "2023-07", event: "Condensed Matter in the City", location: "University College London, UK" },
+  { date: "2023-06", event: "Physics Department Colloquium", location: "Drexel University, Philadelphia, USA" },
+  { date: "2023-05", event: "Quantum Information and Quantum Matter", location: "NYU Abu Dhabi, UAE" },
+  { date: "2023-03", event: "APS March Meeting (keynote)", location: "Las Vegas, USA" },
+  { date: "2023-03", event: "Condensed Matter Theory Seminar", location: "Rutgers University, USA" },
+  { date: "2023-01", event: "Physics Department Colloquium", location: "Imperial College London, UK" },
+  { date: "2023-01", event: "Programmable Quantum Materials Seminar", location: "Columbia University, New York, USA" },
+  { date: "2022-11", event: "Condensed Matter/Quantum Fields Meeting", location: "Institute for Advanced Study, Princeton, USA" },
+  { date: "2022-11", event: "Solid State Physics Seminar", location: "Stony Brook University, USA" },
+  { date: "2022-08", event: "Condensed Matter Summer Camp", location: "Paul Scherrer Institute, Switzerland" },
+  { date: "2022-06", event: "Gordon Research Seminar on Correlated Electron Systems", location: "Mount Holyoke College, USA" },
+  { date: "2022-05", event: "Geometrical Aspects of Topological Phases", location: "Simons Center for Geometry and Physics, Stony Brook, USA" },
+  { date: "2022-05", event: "Condensed Matter Journal Club", location: "University of Zurich, Switzerland" },
+  { date: "2022-02", event: "Physics EDI Initiative Research Talk", location: "Princeton University, USA" },
+  { date: "2021-11", event: "Quantum Initiative Seminar", location: "Princeton University, USA" },
+  { date: "2020-10", event: "Lunch Talk", location: "Princeton Center for Theoretical Science, USA" },
+  { date: "2020-05", event: "Condensed Matter Young Researchers Meeting", location: "ETH Zurich, Switzerland" },
+  { date: "2019-12", event: "LASSP Special Seminar", location: "Cornell University, USA" },
+  { date: "2019-12", event: "Q Seminar", location: "Microsoft Research Station Q, USA" },
+  { date: "2019-10", event: "Young Research Leaders Workshop", location: "University of Mainz, Germany" },
+  { date: "2019-09", event: "Condensed Matter Theory Seminar", location: "University of Utrecht, Netherlands" },
+  { date: "2019-07", event: "ToCoTronics Colloquium", location: "University of W\u00fcrzburg, Germany" },
+  { date: "2019-06", event: "Condensed Matter Theory Seminar", location: "UC Berkeley, USA" },
+  { date: "2019-02", event: "Local's Lunch", location: "Kavli Institute for Theoretical Physics, Santa Barbara, USA" },
+  { date: "2018-10", event: "Condensed Matter Seminar", location: "University of Zurich, Switzerland" },
+  { date: "2018-05", event: "Seminar on Collective Phenomena", location: "University of Cambridge, UK" },
+  { date: "2018-04", event: "Condensed Matter Theory Seminar", location: "Karlsruhe Institute of Technology, Germany" },
+  { date: "2017-11", event: "Condensed Matter Theory Seminar", location: "University of Cologne, Germany" },
+  { date: "2017-11", event: "Condensed Matter Theory Seminar", location: "Paul Scherrer Institute, Switzerland" },
+  { date: "2017-09", event: "Condensed Matter Theory Seminar", location: "RIKEN, Japan" },
+];

@@ -79,7 +79,7 @@ a:hover {
 .profile-photo {
     border-radius: 10px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-    width: 300px;
+    width: 330px;
     max-width: 100%;
 }
 
@@ -148,4 +148,50 @@ a:hover {
     color: #888;
     margin-top: 0.4em;
     letter-spacing: 0.03em;
+}
+
+/* Talks table */
+.talks-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 0.88em;
+    line-height: 1.45;
+}
+
+.talks-table th {
+    text-align: left;
+    color: #355070;
+    font-weight: 600;
+    padding: 0.45em 0.6em;
+    border-bottom: 2px solid #355070;
+    font-size: 0.85em;
+    letter-spacing: 0.03em;
+}
+
+.talks-table .col-date { width: 16%; }
+.talks-table .col-event { width: 48%; }
+.talks-table .col-location { width: 36%; }
+
+.talks-table td {
+    padding: 0.45em 0.6em;
+    border-bottom: 1px solid #e8e9ec;
+    vertical-align: baseline;
+}
+
+.talks-table tr:last-child td {
+    border-bottom: none;
+}
+
+.talks-table .talk-date {
+    white-space: nowrap;
+    color: #888;
+}
+
+.talks-table .talk-event {
+    font-weight: 600;
+}
+
+.talks-table .talk-location {
+    color: #666;
 }

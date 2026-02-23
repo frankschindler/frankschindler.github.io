@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap">
+	<link rel="stylesheet" href="style.css">
+	<title>Talks</title>
+</head>
+
+<body>
+
+<div>
+	<h1>Talks</h1>
+	<p>
+		<a class="back-link" href="index.html">&larr; back to home</a>
+	</p>
+
+	<p>A list of my invited talks at conferences, colloquia, and seminars.</p>
+
+	<div id="talks-container"></div>
+</div>
+
+<script src="talks.js"></script>
+<script>
+(function () {
+	var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+	              "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+	function formatDate(ym) {
+		var parts = ym.split("-");
+		return months[parseInt(parts[1], 10) - 1] + " " + parts[0];
+	}
+
+	var now = new Date();
+	var curYM = now.getFullYear() + "-" + String(now.getMonth() + 1).padStart(2, "0");
+
+	var upcoming = talks.filter(function (t) { return t.date >= curYM; });
+	var past = talks.filter(function (t) { return t.date < curYM; });
+
+	upcoming.sort(function (a, b) { return a.date.localeCompare(b.date); });
+	past.sort(function (a, b) { return b.date.localeCompare(a.date); });
+
+	function buildTable(list) {
+		var html = '<table class="talks-table">';
+		html += '<thead><tr><th class="col-date">Date</th><th class="col-event">Event</th><th class="col-location">Location</th></tr></thead><tbody>';
+		list.forEach(function (t) {
+			html += "<tr>";
+			html += '<td class="talk-date">' + formatDate(t.date) + "</td>";
+			html += '<td class="talk-event">' + t.event + "</td>";
+			html += '<td class="talk-location">' + t.location + "</td>";
+			html += "</tr>";
+		});
+		html += "</tbody></table>";
+		return html;
+	}
+
+	var container = document.getElementById("talks-container");
+	var out = "";
+
+	if (upcoming.length) {
+		out += "<h2>Upcoming</h2>";
+		out += buildTable(upcoming);
+	}
+
+	if (past.length) {
+		out += "<h2>Past</h2>";
+		out += buildTable(past);
+	}
+
+	container.innerHTML = out;
+})();
+</script>
+
+</body>
+</html>
