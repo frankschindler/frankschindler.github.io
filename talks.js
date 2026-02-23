@@ -34,7 +34,7 @@ const talks = [
   { date: "2024-02", event: "Nordic and UK Virtual Condensed Matter Seminar", location: "Virtual" },
   { date: "2024-02", event: "Theory Group Seminar", location: "Imperial College London, UK" },
   { date: "2024-01", event: "Condensed Matter Theory Seminar", location: "Queen Mary University of London, UK" },
-  { date: "2024-01", event: "Quantum Many-Body Theory Seminar", location: "Max Planck Institute for Solid State Research, Stuttgart, Germany" },
+  { date: "2024-01", event: "Quantum Many-Body Theory Seminar", location: "MPI-FKF, Stuttgart, Germany" },
   { date: "2023-11", event: "Theory of Condensed Matter Seminar", location: "University of Cambridge, UK" },
   { date: "2023-09", event: "Korrelationstage (keynote)", location: "MPI-PKS, Dresden, Germany" },
   { date: "2023-08", event: "Summer School: Physics by the Lake", location: "University of Stirling, UK" },
