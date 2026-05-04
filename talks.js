@@ -11,9 +11,9 @@
 
 const talks = [
   { date: "2026-11", event: "Materials Research Society Fall Meeting", location: "Boston, USA" },
-  { date: "2026-06", event: "Quantum Matter Frontiers: Entanglement, Symmetry, and Emergence", location: "KIAS, Seoul, South Korea" },
-  { date: "2026-06", event: "Young Research Leaders in Topological Materials and Beyond", location: "KIAS, Seoul, South Korea" },
-  { date: "2026-05", event: "Quantum Information and Quantum Matter", location: "NYU Abu Dhabi, UAE" },
+  { date: "2026-06-02", event: "Quantum Matter Frontiers: Entanglement, Symmetry, and Emergence", location: "KIAS, Seoul, South Korea" },
+  { date: "2026-06-03", event: "Young Research Leaders in Topological Materials and Beyond", location: "KIAS, Seoul, South Korea" },
+  { date: "2026-06-01", event: "Condensed Matter Theory and Quantum Information Seminar", location: "TU Munich, Germany" },
   { date: "2026-01", event: "New Frontiers of Geometry and Topology in Condensed Matter Physics", location: "University of Tokyo, Japan" },
   { date: "2025-12", event: "Leeds\u2013Loughborough\u2013Nottingham Seminar", location: "University of Leeds, UK" },
   { date: "2025-11", event: "Theory Group Seminar", location: "University of Warwick, UK" },
