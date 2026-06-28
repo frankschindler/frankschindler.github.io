@@ -10,13 +10,15 @@
 // ---------------------------------------------------------------
 
 const talks = [
-  { date: "2026-12-2", event: "Seminar talk", location: "Princeton University, USA" },
-  { date: "2026-12-1", event: "Seminar talk", location: "Bard College, USA" },
-  { date: "2026-11", event: "Materials Research Society Fall Meeting", location: "Boston, USA" },
-  { date: "2026-10", event: "Seminar talk", location: "Donostia International Physics Center, Spain" },
-  { date: "2026-06-02", event: "Quantum Matter Frontiers: Entanglement, Symmetry, and Emergence", location: "KIAS, Seoul, South Korea" },
-  { date: "2026-06-03", event: "Young Research Leaders in Topological Materials and Beyond", location: "KIAS, Seoul, South Korea" },
-  { date: "2026-06-01", event: "Seminar talk", location: "TU Munich, Germany" },
+  { date: "2026-12-11", event: "Seminar talk", location: "Princeton University, USA" },
+  { date: "2026-12-08", event: "Seminar talk", location: "Bard College, USA" },
+  { date: "2026-12-02", event: "Materials Research Society Fall Meeting", location: "Boston, USA" },
+  { date: "2026-11-26", event: "Open quantum systems at the interface between physics and mathematics", location: "Lyon, France" },
+  { date: "2026-10-14", event: "Seminar talk", location: "Donostia International Physics Center, Spain" },
+  { date: "2026-07-03", event: "Young Research Leaders in Topological Materials and Beyond", location: "KIAS, Seoul, South Korea" },
+  { date: "2026-06-23", event: "2 seminar talks", location: "Seoul National University, South Korea" },
+  { date: "2026-06-16", event: "Quantum Matter Frontiers: Entanglement, Symmetry, and Emergence", location: "KIAS, Seoul, South Korea" },
+  { date: "2026-06-10", event: "Seminar talk", location: "TU Munich, Germany" },
   { date: "2026-01", event: "New Frontiers of Geometry and Topology in Condensed Matter Physics", location: "University of Tokyo, Japan" },
   { date: "2025-12", event: "Seminar talk", location: "University of Leeds, UK" },
   { date: "2025-11", event: "Seminar talk", location: "University of Warwick, UK" },
