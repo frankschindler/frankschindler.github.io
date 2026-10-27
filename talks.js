@@ -10,10 +10,11 @@
 // ---------------------------------------------------------------
 
 const talks = [
-  { date: "2026-12-11", event: "Seminar talk", location: "Princeton University, USA" },
-  { date: "2026-12-08", event: "Seminar talk", location: "Bard College, USA" },
+  { date: "2027-4-13", event: "Quantum Geometry Meets Correlation, Symmetry Breaking, and Topology", location: "Santa Barbara, USA" },
+  { date: "2027-4-12", event: "APS Global Physics Summit (keynote talk)", location: "Atlanta, USA" },
   { date: "2026-12-02", event: "Materials Research Society Fall Meeting", location: "Boston, USA" },
   { date: "2026-11-26", event: "Open quantum systems at the interface between physics and mathematics", location: "Lyon, France" },
+  { date: "2026-10-27", event: "Seminar talk", location: "University of Bath, UK" },
   { date: "2026-10-14", event: "Seminar talk", location: "Donostia International Physics Center, Spain" },
   { date: "2026-07-03", event: "Young Research Leaders in Topological Materials and Beyond", location: "KIAS, Seoul, South Korea" },
   { date: "2026-06-23", event: "2 seminar talks", location: "Seoul National University, South Korea" },
@@ -42,12 +43,12 @@ const talks = [
   { date: "2024-01", event: "Seminar talk", location: "Queen Mary University of London, UK" },
   { date: "2024-01", event: "Seminar talk", location: "MPI-FKF, Stuttgart, Germany" },
   { date: "2023-11", event: "Seminar talk", location: "University of Cambridge, UK" },
-  { date: "2023-09", event: "Korrelationstage (keynote)", location: "MPI-PKS, Dresden, Germany" },
+  { date: "2023-09", event: "Korrelationstage (keynote talk)", location: "MPI-PKS, Dresden, Germany" },
   { date: "2023-08", event: "Summer School: Physics by the Lake", location: "University of Stirling, UK" },
   { date: "2023-07", event: "Condensed Matter in the City", location: "University College London, UK" },
   { date: "2023-06", event: "Physics Department Colloquium", location: "Drexel University, Philadelphia, USA" },
   { date: "2023-05", event: "Quantum Information and Quantum Matter", location: "NYU Abu Dhabi, UAE" },
-  { date: "2023-03", event: "APS March Meeting (keynote)", location: "Las Vegas, USA" },
+  { date: "2023-03", event: "APS March Meeting (keynote talk)", location: "Las Vegas, USA" },
   { date: "2023-03", event: "Seminar talk", location: "Rutgers University, USA" },
   { date: "2023-01", event: "Physics Department Colloquium", location: "Imperial College London, UK" },
   { date: "2023-01", event: "Seminar talk", location: "Columbia University, New York, USA" },
